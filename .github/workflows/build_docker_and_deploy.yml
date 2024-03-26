@@ -2,9 +2,9 @@ name: build_docker_and_deploy
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "master" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "master" ]
   
 env:
   DOCKER_USERNAME: liqlos
