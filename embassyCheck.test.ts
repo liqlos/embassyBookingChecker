@@ -11,10 +11,10 @@ const EMBASSY_PASSWORD: string | undefined = process.env.EMBASSY_PASSWORD;
 const bot = new TelegramBot(TELEGRAM_TOKEN);
 
 function sendTelegramMessage(message: string): void {
-  bot.sendMessage(CHAT_ID, message);
+  await bot.sendMessage(CHAT_ID, message);
 }
 
-test.use({ headless: false });
+test.use({ headless: true });
     
 test('has appointments', async ({ page }) => {
   await page.goto('https://prenotami.esteri.it');

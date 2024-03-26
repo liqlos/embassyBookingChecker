@@ -1,0 +1,17 @@
+{
+  "name": "embassy-checker",
+  "version": "1.0.0",
+  "description": "Script to check embassy appointments",
+  "main": "embassyCheck.test.ts",
+  "scripts": {
+    "test": "playwright test",
+    "start": "node embassyCheck.test.ts"
+  },
+  "author": "Aleksei Bukhalov",
+  "license": "MIT",
+  "dependencies": {
+    "@playwright/test": "^1.18.2",
+    "node-telegram-bot-api": "^0.55.0",
+    "dotenv": "^10.0.0"
+  }
+}
