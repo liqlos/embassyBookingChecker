@@ -11,7 +11,7 @@ const EMBASSY_PASSWORD: string | undefined = process.env.EMBASSY_PASSWORD;
 const bot = new TelegramBot(TELEGRAM_TOKEN);
 
 function sendTelegramMessage(message: string): void {
-  await bot.sendMessage(CHAT_ID, message);
+   bot.sendMessage(CHAT_ID, message);
 }
 
 test.use({ headless: true });
