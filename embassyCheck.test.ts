@@ -15,8 +15,10 @@ function sendTelegramMessage(message: string): void {
 }
 
 test.use({ headless: true });
+test.setTimeout(10000);
     
 test('has appointments', async ({ page }) => {
+  page.setDefaultTimeout(3500);
   await page.goto('https://prenotami.esteri.it');
 
   await page.getByRole('textbox', { name: 'Email' }).fill(EMBASSY_EMAIL);
