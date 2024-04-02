@@ -10,13 +10,8 @@ while true; do
     # Check if the test failed (non-zero exit status)
     if [ $test_exit_status -ne 0 ]; then
         echo "Test failed with exit status $test_exit_status"
-        # Add any additional logging or error handling here
-
-        # Sleep for 120 seconds before running the next test
-        sleep 120
-        continue
     fi
 
-    # If the test passed, sleep for 60 seconds before running the next test
-    sleep 120
+    # If the test passed, sleep for 15 seconds before running the next test
+    sleep 15
 done
